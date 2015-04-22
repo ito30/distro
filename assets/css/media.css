@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+	.top-bar .message {
+		text-align: center;
+		font-size: 10px;
+	}
+}
