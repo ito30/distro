@@ -5,6 +5,49 @@ body {
 	font-size: 12px;
 }
 
+select {
+	font-size: 20px;
+	color: #929292;
+	text-transform: uppercase;
+	border: 1px solid #ccc;
+	padding: 10px;
+	width:300px;
+	background: white;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	background: -webkit-linear-gradient(top, #fff 0%, #f3f3f3 100%);
+}
+
+select:hover {
+	background: #f3f3f3;
+}
+
+.custom-selectbox{
+    position: relative;
+    display: inline-block;
+}
+.custom-selectbox:after{
+    content: " ";
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #bdc3c7;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 0;
+    pointer-events:none;
+    transition: all 0.3s linear;
+}
+.custom-selectbox.open:after{
+    transform: rotate(-180deg);
+}
+
+.relative {
+	position: relative;
+}
+
 #wrapper {
 
 }
@@ -210,4 +253,84 @@ header .cart .shopping-cart {
 
 .product img {
 	width: 100%;
+}
+
+.product-detail {
+	margin-top: 20px;
+}
+
+.product-detail ul.distro-breadcrumb {
+	list-style-type: none;
+	font-size: 18px;
+	padding-left: 0;
+}
+
+.product-detail ul.distro-breadcrumb>li {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.product-detail ul.distro-breadcrumb>li a{
+	color : #292929;
+	text-decoration: none;
+}
+
+.product-detail ul.distro-breadcrumb>li a:hover {
+	font-weight: 300;
+}
+
+.product-detail ul.distro-breadcrumb>li:last-child {
+	font-weight: 300;
+}
+
+.product-detail ul.distro-breadcrumb>li:not(:last-child):after {
+	content: "\00a0 \00a0 \f054 \00a0 \00a0";
+	font-family: FontAwesome;
+}
+
+.product-image img {
+	width: 100%;
+}
+
+.product-detail .product-name {
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;
+}
+
+.product-detail-meta .product-name>h1 {
+	margin-top: 0;
+}
+
+.product-detail-meta .product-rating {
+	font-size: 23px;
+	color: #ff8226;
+	display: block;
+	background: #ffffff;
+	padding: 0 15px 0 15px;
+	position: absolute;
+	top: 70%;
+	left: 35%;
+}
+
+.product-detail-meta .product-rating-count {
+	font-size: 11px;
+}
+
+.product-detail-meta .product-price {
+	font-size: 36px;
+	margin-top: 50px;
+}
+
+.product-detail-meta .product-description {
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.product-attributes .attribute-title {
+	font-size: 18px;
+}
+
+.product-attributes .attribute {
+	margin-top:20px;
 }
