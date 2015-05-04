@@ -5,6 +5,30 @@ body {
 	font-size: 12px;
 }
 
+/*input[type="number"] {
+	position: relative;
+	font-size: 20px;
+	color: #929292;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background: white;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	height: 50px;
+	background: url(../../images/spinner-number.png) no-repeat right;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    margin: 0;
+}
+
+input[type="number"]:hover {
+	cursor: pointer;
+}*/
+
+
+
 select {
 	font-size: 20px;
 	color: #929292;
@@ -292,6 +316,26 @@ header .cart .shopping-cart {
 	width: 100%;
 }
 
+.product-image .gallery {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-image .gallery img {
+	height: 116px;
+	width: 116px;
+	opacity: 0.5;
+	cursor: pointer;
+	border: 1px solid #eee;
+}
+
+.product-image .gallery img:hover {
+	opacity: 1;
+}
+
+.product-image .gallery img:not(:first-child) {
+}
 .product-detail .product-name {
 	border-bottom: 2px solid black;
 	padding-bottom: 10px;
@@ -334,3 +378,210 @@ header .cart .shopping-cart {
 .product-attributes .attribute {
 	margin-top:20px;
 }
+
+.product-buttons {
+	margin-top: 30px;
+}
+
+.product-buttons .quantity-group {
+	display: inline-block;
+}
+
+.product-buttons input[type="button"] {
+	position: relative;
+	font-size: 20px;
+	height: 50px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 0;
+	border: 1px solid #ccc;
+}
+.product-buttons input[type="button"].plus, 
+.product-buttons input[type="button"].minus {
+	width: 30px;
+}
+
+.product-buttons input[type="button"].minus, 
+.product-buttons input[type="number"] {
+	float: left;
+}
+
+.product-buttons input[type="button"].add-to-cart {
+	text-transform: uppercase;
+	background-color: #2c3e50;
+	color: white;
+	font-weight: 300;
+	margin-left: 10px;
+}
+
+.product-buttons input[type="number"] {
+	font-size: 20px;
+	color: #929292;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background: white;
+	border-radius: 0;
+	height: 50px;
+	text-align: center;
+	width: 70px;
+	border-left: 0;
+	border-right: 0;
+}
+
+.product-buttons input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  margin: 0;
+  padding: 0;
+	-webkit-appearance: none;
+}
+
+.additional-actions {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.additional-actions a {
+	text-decoration: none;
+	color: #929292;
+	margin-right: 20px;
+}
+
+.additional-actions a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.product-extra {
+	font-size: 14px;
+	color: #929292;
+	margin-top: 20px;
+}
+
+.product-extra span a {
+	color: #929292;
+	text-decoration: none
+}
+.product-extra span a:hover {
+	color: inherite;
+}
+
+.social-media-share {
+	border: 1px solid #ccc;
+	border-left: 0;
+	border-right: 0;
+	margin-top: 20px;
+	padding: 20px 10px 20px 10px;
+}
+
+.social-media-share .share-icon {
+	height: 63px;
+	width: 63px;
+	/*background: #2c3e50;*/
+	background: #fff;
+	font-size: 36px;
+	color: #2c3e50;
+	border: 1px solid #000;
+	text-align: center;
+	padding-top: 5px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.social-media-share .share-icon:hover {
+	background: #2c3e50;
+	color: #fff;
+}
+
+.social-media-share .share-text {
+	font-size: 18px;
+	margin-left: 80px;
+	margin-top: 5px;
+}
+
+/* product tabs */
+
+.product-tabs {
+	margin-top: 30px;
+	/*border-top: 1px solid #ccc;*/
+	padding: 0;
+}
+
+.product-tabs ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+}
+
+.product-tabs ul li {
+	display: inline-block;
+	margin-right: 20px;
+	padding: 10px;
+}
+
+.product-tabs ul li.active {
+	background-color: #ccc;
+}
+
+.product-tabs ul li.active a {
+	color: #000;	
+}
+
+.product-tabs ul li a {
+	color: #929292;
+	text-decoration: none;
+}
+
+.product-tabs ul li:hover {
+	background-color: #ccc;
+}
+
+.product-tabs ul li a:hover {
+	color: #000;
+}
+
+.tabs-content {
+	font-size: 14px;
+}
+
+.tabs-content .tab {
+	display: none;
+}
+.tabs-content .active {
+	display: block;
+}
+
+.tabs-content .tab .text {
+	font-size: 20px;
+}
+
+.comment-container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment-container .avatar {
+	margin-right: 20px;
+}
+
+.comment-container .comment {
+	width: 91.6%;
+  float: right;
+	background-color: #f2f2f2;
+	padding:20px 20px 10px 20px;
+}
+
+.comment-container .comment .textbox {
+	text-align: left;
+}
+
+.comment-container .comment .meta {
+	font-size: 11px;
+	margin-top: 10px;
+	float: right;
+}
+
+
+
